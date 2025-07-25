@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HackFinity</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<body>
+  
+  <div class="background">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-text">HACKFINITY</div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="navbar-links">
+      <li><a href="#home" class="menu-item">Home</a></li>
+      <li><a href="#domains" class="menu-item">Domains</a></li>
+      <li><a href="#about" class="menu-item">About</a></li>
+      <li><a href="#rules" class="menu-item">Regulations</a></li>
+      <li><a href="#prizes" class="menu-item">Prizes</a></li>
+      <li><a href="#footer" class="menu-item">Contact</a></li>
+      <li><a class="register-btn" href="https://forms.gle/9u6T2PLeGbD3pW266" class="menu-item">Register Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section" id="home">
+    <div class="top-logos">
+      <img src="cse.png" alt="cse logo" class="logo-fixed">
+      <div class="title-group">
+        <div class="college-title">
+          <img src="tce.png" alt="tce logo" class="main-logo" style="height:6rem">
+          <h1 class="institute-name">Tontadarya College of Engineering</h1>
+          
+        </div>  
+        <p>Department of CSE/CSD</p>
+        <div class="club-title">
+          <p class="presented-by"><b>Techno-X/Innovate-X Club Presents</b></p>
+        </div>  
+      </div>
+      <img src="csd.png" alt="csd logo" class="logo-fixed">
+    </div>
+    
+    <img src="hack.png" alt="hack logo" class="main-logo">
+
+    <div class="event-title"><span class="highlight">HACKFINITY</span> 2025</div>
+    <div class="club-title">
+      <p class="presented-by"><b>"Push Code, Break Limits, Bleed Innovation"</b></p>
+    </div>
+
+    <div class="event-info">
+      24-hour National-Level hackathon on May 09–10, 2025.<br>
+      If not now, when?
+    </div><br>
+    <a href="https://forms.gle/9u6T2PLeGbD3pW266" class="register-btn">REGISTER NOW</a>
+  </div>
+  </div>
+  <section class="countdown-section">
+    <h2 class="countdown-title"><span class="highlight">Registration</span> Closes</h2>
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <p>DAYS</p>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <p>HOURS</p>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <p>MINUTES</p>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <p>SECONDS</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="domain-section" id="domains">
+    <h2 class="countdown-title"><span class="highlight">Domains Available</span></h2>
+    <div class="domain-grid">
+      <!-- Domain Card 1 -->
+      <div class="domain-card" onclick="setDomain('AI & ML')">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.fzE0FlDHYIAV6VVaskmqPgHaEK&pid=Api&P=0&h=220" alt="AI & ML" class="domain-image" />
+        <div class="domain-content">
+          <h3>AI & ML</h3>
+          <p>Join the future with smart learning and neural networks</p>
+        </div>
+      </div>
+  
+      <!-- Domain Card 2 -->
+      <div class="domain-card" onclick="setDomain('Cyber Security & IoT')">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.vBPbw2lzlnU8IUGmAE2xFQHaD5&pid=Api&P=0&h=220" alt="Cyber Security & IoT" class="domain-image" />
+        <div class="domain-content">
+          <h3>Cyber Security & IoT</h3>
+          <p>Secure the world of connected devices</p>
+        </div>
+      </div>
+  
+      <!-- Domain Card 3 -->
+      <div class="domain-card" onclick="setDomain('Web Development & Android')">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.S_5o5ZI6fhl8YxAnx-iO1QHaER&pid=Api&P=0&h=220" alt="Web Dev & Android" class="domain-image" />
+        <div class="domain-content">
+          <h3>Web Dev & Android</h3>
+          <p>Build seamless apps and dynamic web solutions</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Buttons -->
+    <!-- <div class="domain-buttons">
+      <button onclick="window.location.href='#register'">Register Now</button>
+      <button onclick="window.location.href='#faq'">Learn More</button>
+    </div> -->
+  </section>
+
+  <section class="accommodation-section">
+    <div class="accommodation-container">
+      <h2 class="accommodation-title">Accommodation</h2>
+      <p class="accommodation-info">"Accommodation will be provided on the night of May 8th for students coming from outstation, but they should arrange their own dinner."</p>
+    </div>
+  </section>
+  
+
+  <section class="about-section" id="about">
+    <h2 class="about-title"><span class="highlight">About</span></h2>
+    <p class="about-description">
+      Hackfinity Hackathon is a unique event that brings together students, young professionals, and other individuals around the world.
+    </p>
+    <div class="about-cards">
+      <div class="card">
+        <div class="card-icon">?</div>
+        <h3>What!</h3>
+        <p>
+            Hackfinity brings innovators together to develop tech-driven solutions for real-world challenges.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon">?</div>
+        <h3>Why!</h3>
+        <p>
+            We believe in the power of collaboration to improve lives. Our goal is to spark innovation that transforms the world!
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon">?</div>
+        <h3>How!</h3>
+        <p>
+            Participants will form teams, ideate, prototype, and present solutions over 24 hours — guided by mentors and powered by cutting-edge tools.
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <section class="schedule-section">
+      <div class="schedule-header">
+        <h2 class="schedule-title"> Schedule</h2>
+        <p class="schedule-dates">Here's the agenda for our 24hr innovation-packed hackathon!</p>
+      </div>
+    
+      <div class="schedule-days-wrapper">
+        <div class="schedule-day">
+          <h3 class="day-title">Day 1 - 09/05/2025</h3>
+          <ul class="schedule-list">
+            <li><span class="time">8:00 AM</span> Registration and Breakfast</li>
+            <li><span class="time">9:00 AM - 10:00 AM</span> Inauguration</li>
+            <li><span class="time">12:00 PM - 1:00 PM</span> First Checkpoint</li>
+            <li><span class="time">1:00 PM - 2:00 PM</span> Lunch Break</li>
+            <li><span class="time">4:00 PM - 5:00 PM</span> Tea & Snacks</li>
+            <li><span class="time">11:30 PM - 12:00 AM</span> Second Checkpoint</li>
+          </ul>
+        </div>
+    
+        <div class="schedule-day">
+          <h3 class="day-title">Day 2 - 10/05/2025</h3>
+          <ul class="schedule-list">
+            <li><span class="time">8:00 AM - 9:00 AM</span> Breakfast</li>
+            <li><span class="time">12:00 PM - 1:00 PM</span> Power Judging Round</li>
+            <li><span class="time">1:00 PM - 2:00 PM</span> Lunch</li>
+            <li><span class="time">3:30 PM - 4:30 PM</span> Final Short Listing</li>
+            <li><span class="time">4:30 PM - 5:00 PM</span> Valedictory / Certificate Distribution</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <div class="rules-regulations-wrapper" id="rules">
+    <div class="rules-regulations-header">
+      <h2 class="rules-regulations-title">Restrictions & Regulations</h2>
+      <p class="rules-regulations-description">
+        Please read all the restrictions and regulations carefully to ensure a smooth and fair participation experience.
+      </p>
+    </div>
+  
+    <section class="rules-section">
+      <div class="rules-container">
+        <h2 class="rules-title">Regulations</h2>
+        <ul class="rules-list">
+          <li>The Problem statement only for the IoT will be provided <strong>two or three days before 9th of the May,</strong> for other domains on spot Problem statement will be given.</li>
+          <li>Participants should bring their own <strong>Laptops, Chargers, IOT devices</strong>, any additional hardware needed.</li>
+          <li>Participants need to bring their <strong>College ID cards</strong>.</li>
+          <li>The hackathon will be conducted in <strong>offline mode</strong>.</li>
+          <li><strong>Team Leaders will receive Registration Confirmation Mail</strong> upon entry finalization.</li>
+          <li>Registration fee is <strong>Rs.1000</strong> per Team (non-refundable).</li>
+          <li>Team must have between <strong>2 to 4</strong> members.</li>
+          
+        </ul>
+      </div>
+    </section>
+  
+    <section class="regulation-section" id="regulation">
+      <div class="regulation-container">
+        <h2 class="regulation-title">Restrictions</h2>
+        <ul class="regulation-list">
+          <li>Participants must follow instructions from the organizing committee.</li>
+          <li>Teams must register before the deadline. Late entries will not be accepted.</li>
+          <li>Internet usage is allowed for research, APIs, and documentation.</li>
+          <li>Decisions made by the judging panel will be final and binding.</li>
+          <li>Judging will be based on innovation, technical complexity, UI/UX, and presentation.</li>
+          <li>Top teams will be awarded exciting prizes and certificates. (Domain Specific Prizes)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  
+  <section class="participate-section">
+    <h2 class="about-title"><span class="highlight">Who</span> Can Participate</h2>
+    <p class="section-description">We welcome from all backgrounds!</p>
+    <div class="participate-content">
+      <p>The Hackfinity Hackathon welcomes participants from all education, data science, tech, and more...</p>
+      <p>"Hackfinity is open to all passionate students, developers, designers, and tech enthusiasts from any academic background who are ready to innovate and build solutions!"</p>
+      <div class="participant-images">
+        <img src="team2.jpg" alt="Team 1">
+        <img src="team1.jpg" alt="Team 2">
+        <img src="team3.jpg" alt="Team 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="prizes-section" id="prizes">
+    <h2 class="countdown-title"><span class="highlight">Domain Specific Prizes</span></h2>
+    <div class="prize-items">
+      <div class="prize">
+        <img src="money.webp" alt="Monetary Prize">
+        <h3>Monetary Prize</h3>
+        <p>Each winning team receives a significant financial reward, advancing their innovation solution.<b>"Prizes Worth Rs.45000/-"</b>
+        </p>
+      </div>
+      <div class="prize">
+        <img src="price.webp" alt="Award">
+        <h3>Award Statue</h3>
+        <p>Commemorative trophy & Certificates recognizing excellence and impact in Innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sponsor-section">
+    <h2 class="section-title powered"><span class="highlight-blue">Association with</span></h2>
+    <div class="partner-logos">
+      <img src="smartborn.png" alt="Smartborn">
+    </div>
+  </section>
+
+  <section class="hackfuture-section">
+    <div class="hackfuture-container">
+      <h2 class="hackfuture-title">READY TO HACK THE FUTURE?</h2>
+      <p class="hackfuture-description">
+        Join hundreds of innovators at <strong>HACKFINITY</strong> on <strong>May 09–10 2025</strong> and be part of a transformative tech experience.
+      </p>
+      <div class="hackfuture-buttons">
+        <a href="https://forms.gle/9u6T2PLeGbD3pW266" class="btn-glow">Register Now</a>
+        <a href="mailto:jaydeepsg37@gmail.com" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>HACKFINITY</h3>
+      <p>Join us for the most innovative hackathon experience. Explore the future through code.</p><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.3263356754696!2d75.63388437372183!3d15.412928356675913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8f944f7cb2301%3A0xe39ea5d1d5e09e33!2sTontadarya%20College%20of%20Engineering%2C%20Gadag!5e0!3m2!1sen!2sin!4v1744723722438!5m2!1sen!2sin" 
+        width="320" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen=""
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#domain">Domains</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rules">Regulations</a></li>
+        <li><a href="https://forms.gle/9u6T2PLeGbD3pW266">Register</a></li>
+        <li><a href="mailto:jaydeepsg37@gmail.com">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section" id="footer">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:jaydeepsg37@gmail.com">jaydeepsg37@gmail.com</a></p>
+      <p><strong>Student Coordinators:</strong><br>
+       Rahul L P <a href="tel:+91 6363642417">+91 6363642417</a> <br>
+        Shreya Naik <a href="tel:+91 6360744771">+91 6360744771</a></p>
+        <p><strong>Faculty Coordinators:</strong><br>
+          Adoksaja K K <a href="tel:+91 8147406474">+91 8147406474</a> <br>
+          </p>
+      <p><strong>Location:</strong><br>
+        TCE Campus<br>Gadag, Karnataka</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Hackfinity. All rights reserved.
+    <small>Made with ♥ for the community</small>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
